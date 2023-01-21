@@ -77,6 +77,10 @@ header .container button {
   margin-top: 40px;
 }
 
+header .container img {
+  display: none;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -88,14 +92,67 @@ nav {
   position: sticky;
   top: 0;
 }
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 
 nav ul a {
   font-size: 24px;
   text-decoration: none;
-  margin: 0 35px;
+  color: var(--green);
 }
 
-section{
-height: 1500px;
-background: purple;
+section {
+  height: 1500px;
+  background: purple;
+}
+
+/*/////////////////////// MEDIA QUERIES////////////////// */
+@media (max-width: 1000px) {
+  header .container {
+    width: 100%;
+  }
+
+  nav ul a {
+    font-size: 18px;
+  }
+  nav{
+    padding: 0 30px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 767px) {
+  header .container {
+    width: 100%;
+  }
+
+  header .container img {
+    display: inline;
+    margin-bottom: 70px;
+  }
+  nav {
+    padding: 0 30px;
+  }
+
+  nav img {
+    display: none;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav ul a {
+    font-size: 16px;
+  }
+}
+
+/*/////////////////////// MEDIA QUERIES////////////////// */
+/*/////////////////////// CELULAR ///////////////////////*/
+
+@media (max-width: 480px) {
+  header .container {
+    padding: 0 40px;
+  }
 }
