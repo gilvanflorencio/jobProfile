@@ -104,6 +104,10 @@ nav ul a {
   color: var(--green);
 }
 
+nav ul a svg{
+display: none;
+}
+
 section {
   height: 1500px;
   background: purple;
@@ -154,5 +158,21 @@ section {
 @media (max-width: 480px) {
   header .container {
     padding: 0 40px;
+  }
+  header .container p{
+    margin: 0;
+  }
+
+  nav{
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  nav ul a {
+    font-size: 12px;
+  }
+  nav ul a svg{
+    display: block;
+    margin: 0 auto 10px;
   }
 }
