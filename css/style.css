@@ -159,18 +159,19 @@ section {
   header .container {
     padding: 0 40px;
   }
-  header .container p{
-    margin: 0;
-  }
-
+ 
   nav{
-    padding: 0;
-    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    top: unset;
+    padding: 0 15px;
   }
 
   nav ul a {
     font-size: 12px;
   }
+
   nav ul a svg{
     display: block;
     margin: 0 auto 10px;
