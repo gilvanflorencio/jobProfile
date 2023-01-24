@@ -57,6 +57,14 @@ button {
   cursor: pointer;
 }
 
+.title-purple {
+  color: var(--purple);
+}
+
+.title-green {
+  color: var(--green);
+}
+
 header {
   height: calc(100vh - 65px);
   display: flex;
@@ -104,13 +112,43 @@ nav ul a {
   color: var(--green);
 }
 
-nav ul a svg{
-display: none;
+nav ul a svg {
+  display: none;
 }
 
-section {
-  height: 1500px;
-  background: purple;
+.about-me {
+  display: flex;
+  padding: 100px;
+}
+.about-me .container {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.about-me .img-container {
+  width: 50%;
+  text-align: center;
+
+  position: relative;
+}
+
+.about-me .img-container img {
+  width: 70%;
+}
+
+.about-me .img-container .line{
+width: 75%;
+height: calc(100% + 20px) ;
+border: 1px solid var(--purple);
+
+position: absolute;
+top: -25px;
+left: calc(50% - 75%/2);
+}
+
+.about-me .img-container .line.green {
+  transform: rotate(-3.3deg);
+  color: var(--green);
 }
 
 /*/////////////////////// MEDIA QUERIES////////////////// */
@@ -122,7 +160,7 @@ section {
   nav ul a {
     font-size: 18px;
   }
-  nav{
+  nav {
     padding: 0 30px;
   }
 }
@@ -159,8 +197,8 @@ section {
   header .container {
     padding: 0 40px;
   }
- 
-  nav{
+
+  nav {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -172,7 +210,7 @@ section {
     font-size: 12px;
   }
 
-  nav ul a svg{
+  nav ul a svg {
     display: block;
     margin: 0 auto 10px;
   }
