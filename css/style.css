@@ -99,6 +99,8 @@ nav {
   padding: 0 100px;
   position: sticky;
   top: 0;
+
+  z-index: 99;;
 }
 nav ul {
   width: 100%;
@@ -134,6 +136,7 @@ nav ul a svg {
 
 .about-me .img-container img {
   width: 70%;
+  height: 100%;
 }
 
 .about-me .img-container .line{
@@ -142,7 +145,7 @@ height: calc(100% + 20px) ;
 border: 1px solid var(--purple);
 
 position: absolute;
-top: -25px;
+top: -10px;
 left: calc(50% - 75%/2);
 }
 
@@ -162,6 +165,19 @@ left: calc(50% - 75%/2);
   }
   nav {
     padding: 0 30px;
+  }
+
+  .about-me{
+    flex-direction: column;
+  }
+  .about-me .container, .about-me .img-container{
+    width: 100%;
+  }
+  .about-me .container{
+    padding: 0;
+  }
+  .about-me .img-container{
+    margin: 70px 0;
   }
 }
 
@@ -213,5 +229,9 @@ left: calc(50% - 75%/2);
   nav ul a svg {
     display: block;
     margin: 0 auto 10px;
+  }
+
+  .about-me{
+    padding: 40px;
   }
 }
