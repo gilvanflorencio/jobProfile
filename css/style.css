@@ -100,7 +100,7 @@ nav {
   position: sticky;
   top: 0;
 
-  z-index: 99;;
+  z-index: 99;
 }
 nav ul {
   width: 100%;
@@ -139,14 +139,14 @@ nav ul a svg {
   height: 100%;
 }
 
-.about-me .img-container .line{
-width: 75%;
-height: calc(100% + 20px) ;
-border: 1px solid var(--purple);
+.about-me .img-container .line {
+  width: 75%;
+  height: calc(100% + 20px);
+  border: 1px solid var(--purple);
 
-position: absolute;
-top: -10px;
-left: calc(50% - 75%/2);
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 75% / 2);
 }
 
 .about-me .img-container .line.green {
@@ -154,6 +154,40 @@ left: calc(50% - 75%/2);
   color: var(--green);
 }
 
+.services {
+  text-align: center;
+  margin: 150px 0;
+  padding: 0 100px;
+}
+
+.services .services-container {
+  display: flex;
+  justify-content:space-between ;
+  max-width: 1200px;
+  margin:60px 0 auto;
+}
+
+.services .services-container .service-card {
+  max-width: 360px;
+  border: 1px solid var(--purple);
+  border-radius: 10px;
+   padding:40px 25px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+   align-items: center;
+}
+
+.services .services-container .service-card img{
+  margin-bottom:40px; 
+  width: 90px;
+}
+
+.service-card + .service-card{
+  margin-left: 10px;
+}
 /*/////////////////////// MEDIA QUERIES////////////////// */
 @media (max-width: 1000px) {
   header .container {
@@ -167,16 +201,17 @@ left: calc(50% - 75%/2);
     padding: 0 30px;
   }
 
-  .about-me{
+  .about-me {
     flex-direction: column;
   }
-  .about-me .container, .about-me .img-container{
+  .about-me .container,
+  .about-me .img-container {
     width: 100%;
   }
-  .about-me .container{
+  .about-me .container {
     padding: 0;
   }
-  .about-me .img-container{
+  .about-me .img-container {
     margin: 70px 0;
   }
 }
@@ -231,7 +266,7 @@ left: calc(50% - 75%/2);
     margin: 0 auto 10px;
   }
 
-  .about-me{
+  .about-me {
     padding: 40px;
   }
 }
