@@ -175,8 +175,7 @@ nav ul a svg {
   padding: 0 100px;
 }
 
-.services .services-container,
-.portfolio-container {
+.services .services-container{
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -184,6 +183,7 @@ nav ul a svg {
 }
 
 .services .services-container .service-card {
+  width: 360px;
   max-width: 360px;
   border: 1px solid var(--purple);
   border-radius: 10px;
@@ -213,6 +213,12 @@ nav ul a svg {
   background: url("assets/portfolio-bg.png");
 }
 
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px 0 auto;
+}
 .portfolio .portfolio-container {
   margin-top: 130px;
 }
@@ -301,7 +307,7 @@ nav ul a svg {
 
 .curriculum .container .content .curriculum-info {
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: 135px auto;
   gap: 1rem;
   margin-bottom: 50px;
 }
@@ -427,14 +433,15 @@ nav ul a svg {
     margin: 70px 0;
   }
   .service-card {
+    width: 300px;
     max-width: 300px;
   }
-  .services .services-container,
-  .portfolio-container {
+  .services .services-container {
     padding: 0 20px;
   }
   .portfolio .portfolio-container {
     margin-top: 70px;
+    padding: 0 0px;
   }
 
   .portfolio {
@@ -442,10 +449,16 @@ nav ul a svg {
   }
 
   .curriculum {
-    padding: 0 20px;
+    padding: 0 10px;
+    margin-bottom: 10px;
   }
 
   .curriculum .container .curriculum-info {
-    padding: 0 15px;
+    padding: 0 10px;
   }
+
+  .secondary-button{
+    margin-bottom: 10px;
+  }
+  
 }
