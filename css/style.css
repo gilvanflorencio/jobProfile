@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -169,6 +173,12 @@ nav ul a svg {
   color: var(--green);
 }
 
+.carousel-trabalhos .title-green{
+  text-align: center;
+  margin: 150px 0;
+  padding: 0 100px;
+}
+
 .services {
   text-align: center;
   margin: 150px 0;
@@ -210,7 +220,7 @@ nav ul a svg {
   margin-bottom: 100px;
   height: 800px;
   text-align: center;
-  background: url("assets/portfolio-bg.png");
+  background: url("assets/portfolio-bg.png")
 }
 
 .portfolio-container {
@@ -311,6 +321,39 @@ nav ul a svg {
   gap: 1rem;
   margin-bottom: 50px;
 }
+
+.contact {
+  max-width: 700px;
+  margin: 150px auto 70px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact h1 {
+  width: fit-content;
+  margin: 0 auto 40px;
+  background: -webkit-linear-gradient(#15CDCB, #5280E2);   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact button {
+  margin: 40px auto;
+}
+
+.contact .social-media {
+  max-width: 360px;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 
 /*/////////////////////// MEDIA QUERIES////////////////// */
 @media (max-width: 1000px) {
